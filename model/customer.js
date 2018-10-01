@@ -11,9 +11,9 @@ module.exports = (sequelize, DataTypes) => {
         get() {
             return this.getDataValue('language').split(';')
         },
-        set(val) {
-           this.setDataValue('language',val.join(';'));
-        }
+//         set(val) {
+//            this.setDataValue('language',val.join(';'));
+//         }
       },
     
 
