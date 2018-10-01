@@ -1,10 +1,13 @@
 
 module.exports = {
     "development": {
-        "username": "root",
-        "password":"",
-        "database": "test",
-        "host": "127.0.0.1",
-        "dialect": "mysql"
+        "user":"root"
+        "host": "localhost",
+        "password":"jampot@123",
+        "database": "proximus",
+        "dialect": "mysql",
+        "connectionLimit":"10",   
+        "multipleStatements" :"true" ,    
+        "port" :"3306",
       }
     }
