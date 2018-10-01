@@ -1,7 +1,7 @@
 
 module.exports = {
     "development": {
-        user:"root",
+        username:"root",
         host: "localhost",
         password:"jampot@123",
         database: "proximus",
