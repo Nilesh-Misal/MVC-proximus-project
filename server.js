@@ -34,7 +34,7 @@ app.use(cookieParser());
 // app.set('port', 8000);
 
 
- let port = '8082'
+ let port = '4300'
 
 //app.use('/', routes);
 app.use('/customer', customer);
@@ -54,7 +54,7 @@ models.sequelize.sync().then(function() {
   /**
    * Listen on provided port, on all network interfaces.
    */
-  app.listen(8082, function() {
+  app.listen(4300, function() {
     console.log('Express app listening on port ' + port);
   });
   app.on('error', onError);
@@ -115,7 +115,7 @@ function onError(error) {
 
 function onListening() {
 
-  console.log('Listening on ' + 8000);
+  console.log('Listening on ' + 4300);
 }
 
 module.exports=app;
