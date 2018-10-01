@@ -96,7 +96,7 @@ router.post('/create', function(req, res) {
   //  console.log(req.body);
   
      
-  res.redirect('/');
+  res.send('Your form is Successfully submitted ');
     
   })
   .catch(function(err){
