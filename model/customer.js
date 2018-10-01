@@ -5,18 +5,21 @@ module.exports = (sequelize, DataTypes) => {
       existingcustomerno:DataTypes.STRING,
       ///language:DataTypes.STRING,
 
-    language: {
+     
+    
+ language: {
         type: DataTypes.STRING,
         allowNull: false,
         get() {
             return this.getDataValue('language').split(';')
         },
-//         set(val) {
-//            this.setDataValue('language',val.join(';'));
-//         }
+        set(val)            
+          {
+           this.setDataValue('language',Array.isArray(val) ? val.join(','):val);
+          
+          }
       },
     
-
 
       conatctperson:DataTypes.STRING,
       companyname:DataTypes.STRING,
