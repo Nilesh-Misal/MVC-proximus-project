@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Proximus Order Form</title>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style/style.css" /> 
+     <script src="js/main.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+
+
+}
+body {
+  font-family: 'Trebuchet MS';
+
+}
+
+
+ .mainblock {
+    /* border: ridge; */
+    padding: 0;
+    margin: auto;
+    max-width: 720px; 
+   height: 100%;
+    /* background-color: rgb(200, 195, 204); */
+
+} 
+
+.container {
+  font-family: 'Trebuchet MS';
+    padding: 15px;
+    float: left;
+    background-color: rgb(228, 221, 233);
+max-width: 720px;   
+ margin: auto;
+    border: ridge;
+    }
+ 
+
+.panel-body {   
+  font-family: 'Trebuchet MS';
+font-style: normal;
+display: block;
+    padding: 15px 15px 15px 15px;
+    background-color: rgb(228, 221, 233);
+    width: 100%;
+    font-weight: lighter;
+  font-size: 15px;
+}
+.row:after {
+    content: "";
+    float: right;
+    display: table;
+    clear: both;
+    padding: 12px 12px;
+    margin: 0;
+    align-content: flex-start;
+    width: 100%;
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+  font-size: 15px;
+}
+.check {
+  font-family: 'Trebuchet MS';
+    float: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    font-family: Arial;
+    /* font-size: 13px; */
+    font-weight: lighter;
+  font-size: 15px;
+    
+}
+/* .panel-heading {
+    background-color: rgb(200, 195, 204);
+    color: black;
+    border-collapse: collapse;
+}
+.panel-title{
+    height: 10px;
+    color: black;
+} */
+.check2 {
+  font-family: "Trebuchet MS";
+    float: center;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Trebuchet MS';
+    font-weight: lighter;
+  font-size: 15px;
+
+}
+.header{
+  font-family: 'Trebuchet MS';
+    margin: 0;
+    padding: 12px;
+    /* padding-left: 12px; */
+    color: white;
+    width: 100%;
+    height: 50px;
+    border: ridge;
+    background-color: rgb(87, 19, 143);
+    font-size: large;
+    
+
+}
+label {
+  font-family: 'Trebuchet MS';
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.personaldata{
+  font-family: 'Trebuchet MS';
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 10px;
+  /* background-color: rgb(228, 221, 233); */
+
+  /* letter-spacing: 1px; */
+
+}
+
+input[type=text], textarea{
+    width: 435px;
+    /* padding: 10px; */
+    /* border: 1px solid #FDFBFE; */
+    /* border-radius: 4; */
+    font-family: 'Trebuchet MS';
+    
+    resize: vertical;
+    align-self: auto;
+    align-content: flex-start;
+    /* border-bottom: 2px solid black; */
+
+
+}
+.block2 {
+    width: 100%;
+
+}
+
+
+input[type=submit] {
+  background-color: rgb(87, 19, 143);
+    color: white;
+    /* padding: 12px; */
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    align-content: center;
+    width: 100px;
+    height: 30px;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+}
+a{
+  font-family: 'Trebuchet MS';
+  padding-left: 15px;
+}
+
+input[type=button]:hover {
+ 
+  font-family: 'Trebuchet MS';
+}
+
+input[type=button] {
+  background-color: rgb(87, 19, 143);
+    color: white;
+    margin: 5px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    align-content: center;
+    width: 100px;
+    height: 30px;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+
+}
+
+input[type=submit]:hover {
+ 
+  font-family: 'Trebuchet MS';
+}
+
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 0;
+     /* display: inline-block; */
+    
+}
+.col-80 {
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+  
+}
+
+.rightopheader {
+  float: right;
+  padding: 15px;
+  font-size: 30px;
+}
+.image {
+  float: left;
+  padding: 15px;
+  margin: 15px;
+}
+.customerno {
+  float: left;
+
+
+}
+
+.sameas {
+  padding-left: 11px;
+  font-family: 'Trebuchet MS';
+
+} 
+
+
+/* .panel-title {
+  float: left;
+} */
+/* .active, .panel-title {
+
+} */
+.panel-title:after {
+content: '\002B';
+float: left;
+}
+.active:after {
+  content: "\2212";
+}
+
+
+
+#myForm .action-button {
+  width: 100px;
+  background: #67d5bf;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#myForm .action-button:hover,
+#myForm .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #67d5bf;
+}
+
+.Agreement{
+  background-color: rgb(228, 221, 233);
+  font-family: 'Trebuchet MS';
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 10px;
+
+}
+@media screen and (min-width: 600px) {
+  font-family: 'Trebuchet MS';
+     input[type=text] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    [class*="container"]{
+      width: 100%
+    }
+}
+@media screen and (min-width: 720px) {
+  font-family: 'Trebuchet MS';
+     input[type=text] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    [class*="container"]{
+      width: 100%
+    }
+}
+
+@media screen and (min-width: 768px) {
+  font-family: 'Trebuchet MS';
+     input[type=text] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    [class*="container"]{
+      width: 100%
+    }
+}
+@media screen and (min-width: 992px) {
+  font-family: 'Trebuchet MS';
+     input[type=text] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    [class*="container"]{
+      width: 100%
+    }
+}
+@media screen and (max-width: 1200px) {
+  font-family: 'Trebuchet MS';
+     input[type=text] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    [class*="container"]{
+      width: 100%
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+    <form action="/customers/add" id="myForm" name="myForm" class="myForm" method="POST">
+
+
+
+<div class="mainblock">
+  <div class="image">
+    <img src="/images/index.png" style="width:300px; height:70px; ">
+  </div>
+<div class="rightopheader">
+  <h4>Order Form <p>Fixed Voice Infinity</p> </h4>
+</div>  
+
+
+<div class="container">
+  <!-- progressbar -->
+	
+    
+            <div class="header">
+                Customer data
+                </div>    
+          <!-- <h2>Customer data</h2> -->
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  
+                  <a data-toggle="collapse" aria-expanded="undefined" data-parent="#accordion" href="#collapse1">
+                    <!-- <span class="glyphicon glyphicon-plus"></span> -->
+                     Customer details
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                
+                <div class="panel-body"> 
+                  <div class="check2">
+
+                      <div class="col-20">
+                          <label for="customer">Customer</label>
+                      </div>
+
+                      <div class="col-80">
+                          <input type="checkbox" id="customer1" name="customer" onclick="newfunc()"> New
+                          <input type="checkbox" id="customer" name="customer" onclick="Existfun()"> Existing
+<br>
+                          <div class="customerno">
+                              <p id="Demo2" style="display: none"> Customer number<input type="textbox" id="newnumber" name="newnumber"  style="position: absolute; right:425px; width:310px;"></p>
+                                  <!-- </div>
+
+                              <div class="customerno"> -->
+                          <p id="Demo1" style="display: none"> Customer number<input type="textbox" id="existingnumber" name="existingnumber"   style="position: absolute; right:425px; width: 310px;"></p>
+                              </div>
+                              </div>
+
+                    <div class="col-20">
+                    <label for="language">Language</label>
+                    </div>
+                    <div class="col-80">
+                  <!-- <label class="checkbox"> -->
+                  <input type="checkbox" name="language[]" value="netherland">NL
+                  <!-- <label class="checkbox"> -->
+                     <input type="checkbox" name="language[]" value="english">EN
+                  <!-- <label class="checkbox"> -->
+                      <input type="checkbox" name="language[]" value="french">FR
+                  <!-- <label class="checkbox"> -->
+                      <input type="checkbox" name="language[]" value="german">DL   
+              <br>
+                  </div>
+                  <div class="col-20">
+                      <label for="cname">Contact Person</label>
+                      </div>
+                      <div class="col-80">
+                      <input type="text" id="cname" name="cname" placeholder="Your name.." ><br>
+                      </div>
+                      <div class="col-20">
+                      <label for="comname">Company Name</label>
+                      </div>
+                      <div class="col-80">
+                      <input type="text" id="comname" name="comname" placeholder="Your Company name.." ><br>
+                      </div>
+                      <div class="col-20">
+                      <label for="address">Address</label>
+                      </div>
+
+                      <div class="col-80">
+                      <input type="text" id="address" name="address" placeholder="Your address.." ><br>
+                      </div>
+                      <div class="col-20">
+                      <label for="pcode">Postal Code</label>
+                      </div>
+
+                      <div class="col-80">
+                      <input type="text" id="pcode" name="pcode" placeholder="Your Postal Code.." ><br>
+                      </div>
+                      <div class="col-20">
+                      <label for="vno">VAT number</label>
+                      </div>
+                      <div class="col-80">
+                      <input type="text" id="vno" name="vno" placeholder="Your VAT Number." >
+                      </div>
+                    
+                    </div>        
+                    </div>
+                    </div>
+         
+            
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    <!-- <span class="glyphicon glyphicon-plus"></span> -->
+                     Installation details</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="check2">
+                      <div class="col-20">
+
+                             <label for="Installation Details">Installation details</label>
+                             </div>
+                             <div class="col-80">
+
+                             <textarea rows="4" cols="4" id="install_details" name="install_details" placeholder="See Annex3"></textarea>
+                              </div>
+</div>
+                </div>
+              </div>
+            <!-- </div> -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    <!-- <span class="glyphicon glyphicon-plus"></span> -->
+                     Technical Support Person</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="check2" id="tech">
+                      <div class="col-20">
+
+                    <label for="LastName">Last name</label>
+                    </div>
+
+                    <div class="col-80">
+
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your LastName" ><br>
+                    </div>
+                    <div class="col-20">
+
+                    <label for="Firstname">First name</label>
+                    </div>
+                    <div class="col-80">
+
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter your Firstname" ><br>
+                      </div>
+                    <div class="col-20">
+
+                    <label for="Tel">Tel</label>
+                    </div>
+                    <div class="col-80">
+
+                    <input type="text" id="telephoneno" name="telephoneno" placeholder="" style="width: 187px;" > Mobile:<input type="text" id='mobileno' name="mobileno"style="width:195px;" ><br>
+                   
+                    </div>
+                    <div class="col-20">
+
+                    <label for="Email">E-mail</label>
+                    </div>
+                    <div class="col-80">
+
+                    <input type="text" id="email" name="email" placeholder="Enter email" style="width: 436px;" > 
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+       
+        
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                      <!-- <span class="glyphicon glyphicon-plus"></span>  -->
+                      Administrative Contact Person</a>
+                  </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse 4">
+                  <div class="panel-body">
+                      <div class="check2">
+
+                      <!-- <div class="sameas">
+                          Administrative Contact Person </td><td> <input type=radio name=copy value='yes' id="copytext" onclick="data_copy(this)";> Same as Technical Support Person
+                            <input type=radio name=copy value='no' onclick="data_copy()";> Not Same
+                     </td>
+                    </div> -->
+
+                    <label><input type="checkbox" id="copytext"/>Same as tech sup person </label>
+                    <div class="check2" id="admin">
+                      
+                       
+                      <div class="col-20">
+
+                      <label for="LastName">Last name</label>
+                      </div>
+                      <div class="col-80">
+
+                      <input type="text" id="adlastname" name="adlastname" placeholder="Enter your LastName" ><br>
+                    </div>
+                      <div class="col-20">
+
+                      <label for="Firstname">First name</label>
+                      </div>
+                      <div class="col-80">
+
+                      <input type="text" id="adfirstname" name="adfirstname" placeholder="Enter your Firstname" ><br>
+                      </div>
+                      <div class="col-20">
+
+                      <label for="Tel">Tel</label>
+                          </div>
+
+                          <div class="col-80">
+
+                      <input type="text" id="tphone" name="tphone" placeholder="" style="width: 187px;" > Mobile:<input type="text" id='admobileno' name="admobileno" style="width:195px;" ><br>
+                     </div>
+                      <div class="col-20">
+
+                      <label for="Email">E-mail</label>
+                      </div>
+                      <div class="col-80">
+
+                      <input type="text" id="ademail" name="ademail" placeholder="Enter email" style="width: 436px;" > 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+         </div>
+         </div>
+      <br>
+  
+        <div class="header">
+          Protection of Personal data
+        </div>
+
+        <div class="personaldata">
+            The personal data provided by the Customer in the Customer Data section of this document will be incorporated into the files held by Proximus SA under public law, Bd. du Roi Albert ll, 27, B-1030 Brussels. These data will be processed according to the Proximus privacy policy which is available on www..proximus.be/privacy. The data will be used to inform the Customer about Proximus products and services, unless the Customer indicates below he does not want so.
+       <br>
+       <br>
+            <label class="checkedbox1">
+              <input type="checkbox" name="personaldata" id="personaldata" value="personaldata">The Customer does not want the personal data provided in the Customer Data section to be used to keep him informed about Proximus products and services.
+            </label>
+       
+        </div>
+        <br>
+
+        <div class="proximuscontactperson">
+        <div class="header">
+            To be completed by Proximus contact person
+          </div>
+
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#followup">
+                 Follow-up </a>
+                </h4>
+              </div>
+                      <div id="followup" class="panel-collapse collapse 4">
+                        <div class="panel-body">
+                           
+                          <div class="check2" >            
+                              <div class="col-20">
+                                  <label for="BCIno">BCI opportunity no</label>
+                                  </div>
+                                  <div class="col-80">
+                                  <input type="text" id="BCIno" name="BCIno" placeholder="Your BCI no.."><br><br>
+                                  </div>
+          
+                                  <div class="col-20">
+                                      <label for="Proref">Proximus ref</label>
+                                      </div>
+                                      <div class="col-80">
+                                      <input type="text" id="Proxref" name="Proxref" placeholder=""><br>
+                                      </div>    
+                             </div>
+                        </div>
+                       </div>
+              </div>
+        
+         </div>
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#sales">
+                     Sales channel </a>
+                    </h4>
+                  </div>
+                  <div id="sales" class="panel-collapse collapse 4">
+                    <div class="panel-body">
+                      <div class="check2" >
+                        
+                        
+                          <div class="col-20">
+                              <label for="Saleschanel">Sales Channel</label>
+                              </div>
+                              <div class="col-80">
+                                  <input type="checkbox" name="sales[]" value="AM/Solsa">AM/Solsa
+                                  <input type="checkbox" name="sales[]" value="TB">TB
+                                  <input type="checkbox" name="sales[]" value="CC">CC
+                                  <input type="checkbox" name="sales[]" value="Partner">Partner
+                                  <input type="checkbox" name="sales[]" value="Other">Other
+                                 </div>
+                               </div>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+            
+             <!-- </div> -->
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#SCD">
+                        Seller's Contact details</a>
+                    </h4>
+                  </div>
+                  <div id="SCD" class="panel-collapse collapse 4">
+                    <div class="panel-body">
+                      <div class="check2" id="admin">
+                        
+                        <div class="col-20">
+                        <label for="Name">Name</label>
+                        </div>
+                        <div class="col-80">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" ><br>
+                        </div>
+                        <div class="col-20">
+                        <label for="Tel">Tel</label>
+                            </div>
+                            <div class="col-80">
+                        <input type="text" id="tphone" name="tphone" placeholder="" style="width: 187px;" > Mobile:<input type="text" id='admobileno' name="admobileno" style="width:195px;" ><br>
+                             </div>
+                        <div class="col-20">
+                        <label for="Email">E-mail</label>
+                        </div>
+                        <div class="col-80">
+                        <input type="text" id="ademail" name="ademail" placeholder="Enter email" style="width: 436px;" > 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+             </div>
+        <!--  -->
+             
+          <!-- </div>        
+          </div>
+          </div>
+             -->
+
+<!-- close of proximuscontact person -->
+      </div>      
+
+
+    
+      
+</div>
+
+      </div>
+      </div>
+
+
+     
+
+
+
+
+      <div class="row">
+          <div class="col-20">
+            <input type="submit" value="Submit" onclick="summit()" style="position: absolute; left: 560px">
+            <input type="button" value="Reset" style="position: absolute; left: 450px;" onclick="reset()">
+        
+        
+      </div>
+          </div> 
+      
+       
+      <!-- next page 
+      <div id="browse_app">
+          <a href="customer1.html"><button>Next</button></a>  
+         <input type="button"  value="next" onclick="customer1.html"/>
+      </div>
+      <div id="button"><a href="customer1.html">next</a></div>
+      <a href="customer1.html" class="btn btn-default">next</a>
+      <button type="button"  formaction="/agreement.html">Submit to another page</button> -->
+
+    </div>
+  </div>
+
+        <!-- closing of container  -->
+      </div>
+         <!-- closing of main block -->
+    </div>
+
+ 
+
+</form>    
+
+<script type="text/javascript">
+
+
+	function summit(){
+		// document.write("Your application is submitted successfully!");
+		alert("Are you ready to submit");
+
+	}
+	function Existfun(){
+		  var checkBox = document.getElementById("customer");
+    var text = document.getElementById("Demo1");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+	}
+
+	function newfunc(){
+		  var checkBox = document.getElementById("customer1");
+    var text = document.getElementById("Demo2");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+	}
+
+   function data_copy()
+{
+if(document.myForm.copy[0].checked){
+document.myForm.adlastname.value=document.myForm.lastname.value;
+document.myForm.adfirstname.value=document.myForm.firstname.value;
+document.myForm.tphone.value=document.myForm.telephoneno.value;
+document.myForm.admobileno.value=document.myForm.mobileno.value;
+document.myForm.ademail.value=document.myForm.email.value;
+
+}else{
+document.myForm.adlastname.value="";
+document.myForm.adfirstname.value="";
+document.myForm.tphone.value="";
+document.myForm.admobileno.value="";
+document.myForm.ademail.value="";
+
+}
+}
+
+
+
+
+var acc = document.getElementsByClassName("panel-title");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+function reset(){
+  document.getElementById("myForm").reset();
+}
+	
+
+
+$(".submit").click(function(){
+	return false;
+})
+</script>
+</body>
+</html>
